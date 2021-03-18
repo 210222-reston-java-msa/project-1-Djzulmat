@@ -1,0 +1,78 @@
+2021-03-13 14:01:29 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 14:01:29 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 14:01:29 WARN  UserDAOImpl:110 - WARNING: Failed to update Mark's information.
+2021-03-13 14:04:55 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 14:04:55 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 14:04:55 WARN  UserDAOImpl:110 - WARNING: Failed to update Elton's information.
+2021-03-13 14:06:26 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 14:06:26 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 14:06:26 WARN  UserDAOImpl:110 - WARNING: Failed to update Elton's information.
+2021-03-13 14:08:06 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 14:08:06 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 14:08:06 WARN  UserDAOImpl:110 - WARNING: Failed to update Elton's information.
+2021-03-13 14:19:57 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 14:19:57 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 14:19:57 WARN  UserDAOImpl:110 - WARNING: Failed to add user.
+org.postgresql.util.PSQLException: ERROR: insert or update on table "users" violates foreign key constraint "roles_fk"
+  Detail: Key (role_id)=(0) is not present in table "user_roles".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124)
+	at com.revature.repositories.UserDAOImpl.addUser(UserDAOImpl.java:105)
+	at com.revature.services.UserService.register(UserService.java:19)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:62)
+2021-03-13 23:18:38 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 23:18:38 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 23:18:38 WARN  UserDAOImpl:111 - WARNING: Failed to add user.
+org.postgresql.util.PSQLException: ERROR: insert or update on table "users" violates foreign key constraint "roles_fk"
+  Detail: Key (role_id)=(0) is not present in table "user_roles".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124)
+	at com.revature.repositories.UserDAOImpl.addUser(UserDAOImpl.java:105)
+	at com.revature.services.UserService.register(UserService.java:19)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:62)
+2021-03-13 23:24:29 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 23:24:29 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 23:24:29 WARN  UserDAOImpl:112 - WARNING: Failed to add user.
+org.postgresql.util.PSQLException: ERROR: insert or update on table "users" violates foreign key constraint "roles_fk"
+  Detail: Key (role_id)=(0) is not present in table "user_roles".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:147)
+	at com.revature.repositories.UserDAOImpl.addUser(UserDAOImpl.java:106)
+	at com.revature.services.UserService.register(UserService.java:19)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:62)
+2021-03-13 23:24:29 INFO  UserDAOImpl:116 - SUCCESS: User Elton has been successfully added.
+2021-03-13 23:36:32 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 23:36:32 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 23:36:33 WARN  UserDAOImpl:112 - WARNING: Failed to add user.
+org.postgresql.util.PSQLException: ERROR: insert or update on table "users" violates foreign key constraint "roles_fk"
+  Detail: Key (role_id)=(0) is not present in table "user_roles".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:147)
+	at com.revature.repositories.UserDAOImpl.addUser(UserDAOImpl.java:106)
+	at com.revature.services.UserService.register(UserService.java:19)
+	at com.revature.util.ConnectionUtil.main(ConnectionUtil.java:62)
+2021-03-13 23:36:33 INFO  UserDAOImpl:116 - SUCCESS: User Elton has been successfully added.
+2021-03-13 23:56:26 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 23:56:26 INFO  ConnectionUtil:55 - connected to db
+2021-03-13 23:58:41 INFO  ConnectionUtil:46 - connection successful
+2021-03-13 23:58:41 INFO  ConnectionUtil:55 - connected to db
